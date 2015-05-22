@@ -25,8 +25,8 @@ names(data)[3:563] <- vars  #apply measurement names to columns
 #Extracts only the measurements on the mean and standard deviation for each measurement. 
 #
 datameanstd <- select(data, subject, activity, contains("ean"), contains("std"))
-#Uses descriptive activity names to name the activities in the data set
-
-#Appropriately labels the data set with descriptive variable names. 
-
 #From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+grpdata <- group_by(datameanstd, subject, activity)
+mean_grpdata <- summarise_each(grpdata, funs(mean))
+# Write to file
+write.table(mean_grpdata, file = "tidydata.txt", row.names = FALSE)
