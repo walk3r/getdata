@@ -1,1 +1,1 @@
-# getdata
+#see readme.txt
