@@ -1,14 +1,14 @@
-subject   2
-  Subject 
-        0..30   Unique identifier assigned to person conducting tests and being measured
-activity  1
-  Activity
-          1   WALKING
-          2   WALKING_UPSTAIRS
-          3   WALKING_DOWNSTAIRS
-          4   SITTING
-          5   STANDING
-          6   LAYING
+#subject   2
+ ## Subject 
+   ###     0..30   Unique identifier assigned to person conducting tests and being measured
+#activity  1
+ ## Activity
+          1.   WALKING
+          2.   WALKING_UPSTAIRS
+          3.   WALKING_DOWNSTAIRS
+          4.   SITTING
+          5.   STANDING
+          6.   LAYING
 tBodyAcc.mean...X
 tBodyAcc.mean...Y
 tBodyAcc.mean...Z
